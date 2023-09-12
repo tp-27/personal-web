@@ -11,7 +11,7 @@ import { useVideoAutoPlayback } from '/src/hooks/useVideoAutoPlayback';
 import { TabsDefault } from '@/components/Tabs';
 import { aedMeInfo } from './utils.js'
 import aedme1 from '/public/aedme_1.png';
-import gameoflife from '/public/gameoflife.png';
+import canoeNav from '/public/canoe-nav.png';
 import { Carousel } from '@/components/Carousel';
 
 
@@ -59,11 +59,11 @@ export default function Home() {
     },
   ]
 
-  const gameOfLifeData = [
+  const canoeNavData = [
     { 
         label: "What",
         content: "This application gamifies the mundance tasks of everyday life. It is to-do list that feels like a game you want to improve on and get better at.",
-        imgURL: gameoflife
+        imgURL: canoeNav
     },
     {
         label: "Development",
@@ -120,34 +120,36 @@ export default function Home() {
         </section>
         <section className="px-10 md:px-20 lg:px-40 py-10">
           <div>
-            <Carousel className="text-black-500"/>
             <h3 className="text-3xl py-1 text-black dark:text-white">My story</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-400">
             Beyond the classroom, I find solace and beauty in nature during the summers through canoe trips to Algonquin Park or Kawartha Lakes. When winter arrives, you'll spot me on the mountains (more like hills in Ontario) mindlessly snowboarding down freshly groomed slopes. Between these adventures, I'm often at my keyboard, diligently learning new technologies and languages to aid me in building my next personal project. Below, you'll find a glimpse of some of my recent projects.
             </p>
           </div>
 
-        
+          <h3  className="text-3xl py-1 text-black dark:text-white py-10">Portfolio</h3>   
         </section>
 
-        <section className="px-10 md:px-20 lg:px-40 py-10">
-          <h3  className="text-3xl py-1 text-black dark:text-white py-10">Portfolio</h3>
-          
-  
+        <section className="w-full min-h-screen">
           <div className="w-full min-h-screen text-black flex items-start justify-center bg-opacity-60 p-10 dark:text-white">
             <TabsDefault 
               tabData={aedData} // FIX ME - IMPORT AS COMPONENT 
             />
           </div>
+        </section>
 
+        <section className="bg-gray-400 w-full min-h-screen">  
           <div className="w-full min-h-screen text-black flex items-start justify-center bg-opacity-60 p-10 dark:text-white">
             <TabsDefault
-              tabData={gameOfLifeData}
+              tabData={canoeNavData}
             />
           </div>
+        </section>
 
+        <section className="bg-gray-300 w-full min-h-screen">  
           <div className="w-full min-h-screen text-black flex items-start justify-center bg-opacity-60 p-10 dark:text-white">
-            {/* <TabsDefault /> */}
+            <TabsDefault
+              tabData={canoeNavData}
+            />
           </div>
         </section>
 
