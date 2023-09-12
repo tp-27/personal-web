@@ -1,6 +1,4 @@
 import React from 'react';
-import { useRef, useEffect, useState } from 'react';
-import { useInView } from 'react-intersection-observer';
 import { Inter } from 'next/font/google';
 import Head from "next/head";
 import {BsFillMoonStarsFill} from 'react-icons/bs';
@@ -9,10 +7,9 @@ import Image from 'next/image';
 import profile_pic from '/public/profile_pic.jpg';
 import { useVideoAutoPlayback } from '/src/hooks/useVideoAutoPlayback';
 import { TabsDefault } from '@/components/Tabs';
-import { aedMeInfo } from './utils.js'
 import aedme1 from '/public/aedme_1.png';
 import canoeNav from '/public/canoe-nav.png';
-import { Carousel } from '@/components/Carousel';
+
 
 
 const inter = Inter({ subsets: ['latin'] })
