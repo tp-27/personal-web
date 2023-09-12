@@ -5,7 +5,7 @@ export function TabsDefault(data) {
     const [activeTabIndex, setActiveTabIndex] = useState(0);
 
     const tabInfo = data.tabData;
-    console.log(tabInfo[0])
+
     return (
         <div className="h-5/6 w-5/6">
             <div className="flex justify-evenly align-top space-x-3 border-b">
