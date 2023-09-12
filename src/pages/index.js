@@ -9,6 +9,7 @@ import { useVideoAutoPlayback } from '/src/hooks/useVideoAutoPlayback';
 import { TabsDefault } from '@/components/Tabs';
 import aedme1 from '/public/aedme_1.png';
 import canoeNav from '/public/canoe-nav.png';
+import { useState } from "react";
 
 
 
