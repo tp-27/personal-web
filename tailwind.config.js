@@ -16,6 +16,11 @@ module.exports = {
       fontFamily: {
         burtons: "burtons",
       },
+      backgroundColor: {
+        'custom-one': '#7F211C',
+        'custom-two': '#6C63FF',
+        'custom-three': '#D98460',
+      },
     },
   },
   plugins: [],

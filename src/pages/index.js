@@ -9,6 +9,7 @@ import { useVideoAutoPlayback } from '/src/hooks/useVideoAutoPlayback';
 import { TabsDefault } from '@/components/Tabs';
 import aedme1 from '/public/aedme_1.png';
 import canoeNav from '/public/canoe-nav.png';
+import molecule from '/public/molecule.png';
 import { useState } from "react";
 
 
@@ -83,6 +84,32 @@ export default function Home() {
     },
   ]
 
+  const moleculeData = [
+    { 
+        label: "What",
+        content: "This application gamifies the mundance tasks of everyday life. It is to-do list that feels like a game you want to improve on and get better at.",
+        imgURL: molecule
+    },
+    {
+        label: "Development",
+        content: `This was created with Java and SQL`,
+        imgURL: ''
+    },
+    {
+        label: "Why",
+        content: `We're not always in the position that we want to be at.
+        We're constantly growing. We're constantly making mistakes. We're
+        constantly trying to express ourselves and actualize our dreams.`,
+        imgURL: ''
+    },
+    {
+        label: "Demo",
+        content: "Video",
+        imgURL: ''
+        
+    },
+  ]
+
   
   return (    
     <div className={darkMode ? "dark" : ""}>
@@ -93,7 +120,7 @@ export default function Home() {
       <main className="bg-white dark:bg-gray-900">
         <section className="min-h-screen px-10 md:px-20 lg:px-40">
             <nav className="py-10 mb-12 flex justify-between">  {/* py-10 is padding top/bottom */}
-              <h1 className="text-xl text-black dark:text-white">Thomas Phan</h1>
+              <h1 className="text-xl text-teal-600 dark:text-white">Thomas Phan</h1>
               <ul className="flex items-center">
                 <li>
                   <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)}className="cursor-pointer text-2xl fill-black dark:fill-white"/>
@@ -105,12 +132,12 @@ export default function Home() {
               </ul>
             </nav>
             <div className="text-center p-10">
-              <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">Thomas Phan</h2>
-              <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
+              {/* <h2 className="text-5xl py-2  font-medium md:text-6xl">Thomas Phan</h2> */}
+              <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-5 overflow-hidden md:h-96 md:w-96">
                 <img src="/profile_pic.jpg" alt="headshot" className="object-contain h-300 w-100"/>
                 {/* <Image src={profile_pic} layout="fill" objectFit="cover"/> */}
               </div>
-              <h3 className="text-2xl py-2 md:text-3xl dark:text-white">Software Developer</h3>
+              <h3 className="text-2xl mt-20 md:text-3xl text-black dark:text-white">Software Developer</h3>
               <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-400">I'm a passionate and dedicated fourth-year student pursuing a Bachelor of Computing degree in Computer Science at the University of Guelph. I possess a keen interest in technology and am driven by the goal of creating innovative solutions. This drive is particularly evident in the rigor I apply to developing personal projects.</p>
             </div>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-500">
@@ -128,10 +155,18 @@ export default function Home() {
           <h3  className="text-3xl py-1 text-black dark:text-white py-10">Portfolio</h3>   
         </section>
 
-        <section className="w-full min-h-screen">
-          <div className="w-full min-h-screen text-black flex items-start justify-center bg-opacity-60 p-10 dark:text-white">
+        <section className="bg-custom-one w-full min-h-screen">
+          <div className="w-full min-h-screen text-white flex items-start justify-center bg-opacity-60 p-10 dark:text-white">
             <TabsDefault 
               tabData={aedData} // FIX ME - IMPORT AS COMPONENT 
+            />
+          </div>
+        </section>
+
+        <section className="bg-white w-full min-h-screen">  
+          <div className="w-full min-h-screen text-black flex items-start justify-center bg-opacity-60 p-10 dark:text-white">
+            <TabsDefault
+              tabData={canoeNavData}
             />
           </div>
         </section>
@@ -139,15 +174,7 @@ export default function Home() {
         <section className="bg-gray-400 w-full min-h-screen">  
           <div className="w-full min-h-screen text-black flex items-start justify-center bg-opacity-60 p-10 dark:text-white">
             <TabsDefault
-              tabData={canoeNavData}
-            />
-          </div>
-        </section>
-
-        <section className="bg-gray-300 w-full min-h-screen">  
-          <div className="w-full min-h-screen text-black flex items-start justify-center bg-opacity-60 p-10 dark:text-white">
-            <TabsDefault
-              tabData={canoeNavData}
+              tabData={moleculeData}
             />
           </div>
         </section>
