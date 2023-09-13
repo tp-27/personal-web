@@ -1,10 +1,13 @@
 import { useState } from "react";
 import Image from 'next/image';
+import { VideoPlayer } from '@/components/VideoPlayer';
+import aedVideo from '/public/videos/aed_demo.mp4';
 
-export function TabsDefault(data) {
+export function TabsDefault(data, projectName) {
     const [activeTabIndex, setActiveTabIndex] = useState(0);
 
     const tabInfo = data.tabData;
+
 
     return (
         <div className="h-5/6 w-5/6">
@@ -28,11 +31,13 @@ export function TabsDefault(data) {
             <div className="py-4">
                 <p>{tabInfo[activeTabIndex].content}</p>
                 
-            
-                {tabInfo[activeTabIndex].imgURL != ''
-                    ? <Image src={tabInfo[activeTabIndex].imgURL}/>
-                    :  null
-                }
+                {tabInfo[activeTabIndex].imgURL != '' && <Image src={tabInfo[activeTabIndex].imgURL}/>}
+                
+                {/* {project === 'aed' && tabInfo[activeTabIndex] === 3 && <VideoPlayer videoURL={aed}/>} */}
+      
+                {/* {tabInfo[activeTabIndex].videoURL != '' && <VideoPlayer videoURL={require(tabInfo[activeTabIndex].videoURL)}/>} */}
+                    
+                
             </div>
         </div>
 
