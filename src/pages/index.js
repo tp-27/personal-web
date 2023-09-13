@@ -11,8 +11,6 @@ import aedme1 from '/public/aedme_1.png';
 import canoeNav from '/public/canoe-nav.png';
 import molecule from '/public/molecule.png';
 import { useState } from "react";
-import { VideoPlayer } from '@/components/VideoPlayer';
-import aedVideo from '/public/videos/aed_demo.mp4';
 
 const inter = Inter({ subsets: ['latin'] })
 

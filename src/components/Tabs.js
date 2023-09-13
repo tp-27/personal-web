@@ -1,7 +1,5 @@
 import { useState } from "react";
 import Image from 'next/image';
-import { VideoPlayer } from '@/components/VideoPlayer';
-import aedVideo from '/public/videos/aed_demo.mp4';
 
 export function TabsDefault(data, projectName) {
     const [activeTabIndex, setActiveTabIndex] = useState(0);
