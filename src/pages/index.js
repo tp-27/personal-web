@@ -33,7 +33,7 @@ export default function Home() {
   const aedData = [
     { 
         label: "What",
-        content: `AEDMe is a web application that locates the nearest automated electronic defibrilator from your current location. This application serves 7 different university campuses in Ontario.`,
+        content: `AEDMe is a web application that locates the nearest automated electronic defibrilator from your current location.`,
         imgURL: aedme1
     },
     {
