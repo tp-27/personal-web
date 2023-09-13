@@ -38,14 +38,12 @@ export default function Home() {
     },
     {
         label: "Development",
-        content: `content`,
+        content: `The front-end user interface of this application was built with JavaScript, HTML/CSS. In the background, I used the BeautifulSoup4 Python library in order to scrape HTML content from university websites which contained information about where AEDs were located. Next, I used the Nominatim API with the addresses obtained and generated all of the corresponding coordinates. With the help of Google Maps API I was able to use the coordinates and along with HTML Geolocation to generate routes and directions from the user to an AED location. In order to find the distance between the user's location and the nearest AED I implemented the Haversine Formula which calculates the distance between two points on a sphere given their longitude and latitude distances. `,
         imgURL: ''
     },
     {
         label: "Why",
-        content: `We're not always in the position that we want to be at.
-        We're constantly growing. We're constantly making mistakes. We're
-        constantly trying to express ourselves and actualize our dreams.`,
+        content: `After joining the student-led first response team at the University of Guelph and receiving my emergency medical responder certification I learned why AEDs were important and how to use one. Many of my friends who weren't on the team didn't know what an AED was given that there were so many all around campus. This notion led me to come up with the idea of AEDMe which serves as an informational platform for the awareness and usage of AEDs. This project allowed me to leverage my development skills in order deliver an application that would hopefully serve others on campus. `,
         imgURL: ''
     },
     {
@@ -61,19 +59,17 @@ export default function Home() {
   const canoeNavData = [
     { 
         label: "What",
-        content: "This application gamifies the mundance tasks of everyday life. It is to-do list that feels like a game you want to improve on and get better at.",
+        content: "CanoeNav is your virtual travel agent for the Ontario backcountry. It helps you to easily plan and book canoe trips.",
         imgURL: canoeNav
     },
     {
         label: "Development",
-        content: `This was created with Java and SQL`,
+        content: `This is a project that I am currently building. I plan to utilize the Leaflet API in order to develop an interactive map where users can view campsites for a given Ontario provincial park by lake. Users will be able to create an account and login to the application. I will be using Firebase to handle authentification. The user information will be stored into an SQL database.`,
         imgURL: ''
     },
     {
         label: "Why",
-        content: `We're not always in the position that we want to be at.
-        We're constantly growing. We're constantly making mistakes. We're
-        constantly trying to express ourselves and actualize our dreams.`,
+        content: `One of my favourite hobbies is backcountry camping. Since 2018, every summer I have gone on a week long portage at various Ontario parks. These trips bring me back to a pure headspace free of distraction from the faculties of modern society. I am grateful to be able to experience the beauty of backcountry camping. There are many components into planning a canoe trip, from tracking paddling distance to finding a route suiting to your experience level. I personally have never found an online resource that streamlines this experience and decided to build one myself in order to help others who are interested in trying backcountry camping. The preparation process can be intimidating and I hope this application can be a helping hand so that others can find tranquility and solace.  `,
         imgURL: ''
     },
     {
@@ -127,7 +123,7 @@ export default function Home() {
                 </li>
                 <li>
                   <a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8" 
-                  href="#">Resume</a>
+                  href="https://drive.google.com/file/d/1YV0lbtzitNe7RtgGSY77zD95C02Ejqoq/view?usp=sharing">Resume</a>
                 </li>
               </ul>
             </nav>
