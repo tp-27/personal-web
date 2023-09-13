@@ -136,9 +136,14 @@ export default function Home() {
             <div className="text-center p-10">
               {/* <h2 className="text-5xl py-2  font-medium md:text-6xl">Thomas Phan</h2> */}
               <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-5 overflow-hidden md:h-96 md:w-96">
-                {/* <img src="/profile_pic.jpg" alt="headshot" className="object-contain h-500 w-100"/> */}
-                <Image src={profile_pic} layout="fill" objectFit="cover"/>
+                <div
+                  className="h-full w-full bg-cover m-r-100"
+                  style={{
+                    backgroundImage: `url('/profile_pic.jpg')`,
+                  }}
+                />
               </div>
+
               <h3 className="text-2xl mt-20 md:text-3xl text-black dark:text-white">Software Developer</h3>
               <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-400">I'm a passionate and dedicated fourth-year student pursuing a Bachelor of Computing degree in Computer Science at the University of Guelph. I possess a keen interest in technology and am driven by the goal of creating innovative solutions. This drive is particularly evident in the rigor I apply to developing personal projects.</p>
             </div>
