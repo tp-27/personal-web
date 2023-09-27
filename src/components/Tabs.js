@@ -27,14 +27,17 @@ export function TabsDefault(data, projectName) {
                 })}
             </div>
             <div className="py-4">
-                <p>{tabInfo[activeTabIndex].content}</p>
-                
-                {tabInfo[activeTabIndex].imgURL != '' && <Image src={tabInfo[activeTabIndex].imgURL}/>}
-                
-                {/* {project === 'aed' && tabInfo[activeTabIndex] === 3 && <VideoPlayer videoURL={aed}/>} */}
-      
-                {/* {tabInfo[activeTabIndex].videoURL != '' && <VideoPlayer videoURL={require(tabInfo[activeTabIndex].videoURL)}/>} */}
+                <div className="flex flex-col justify-items-center items-center">
+                    <h1 className="text-center text-lg p-5">{tabInfo[activeTabIndex].content}</h1>
+                </div>
+                <div className="flex flex-col items-center justify-items-center">
+                    {tabInfo[activeTabIndex].imgURL != '' && <Image src={tabInfo[activeTabIndex].imgURL}/>}
                     
+                    {tabInfo[activeTabIndex].link ? (
+                          <a className="text-center text-lg p-5" href={tabInfo[activeTabIndex].link}>View site</a>
+                    ) : (null)}
+    
+                </div>
                 
             </div>
         </div>
